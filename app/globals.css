@@ -24,3 +24,126 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Editor canvas fonts — `font-family` values must match `lib/editorFonts.ts` */
+@font-face {
+  font-family: "Editor Brandon";
+  src: url("/fonts/brandon.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Editor Eclipse";
+  src: url("/fonts/eclipse.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Editor Hind";
+  src: url("/fonts/hind.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Editor Japanese";
+  src: url("/fonts/japanese.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Editor Moderno";
+  src: url("/fonts/moderno.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Editor Molot";
+  src: url("/fonts/molot.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Editor Monoton";
+  src: url("/fonts/monoton.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Editor Outrun";
+  src: url("/fonts/outrun.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Editor Proxima Nova";
+  src: url("/fonts/proximanova.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Editor Road Rage";
+  src: url("/fonts/road-rage.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Editor Retro Signature";
+  src: url("/fonts/retro-signature.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Editor Script";
+  src: url("/fonts/script.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Editor Simplicity";
+  src: url("/fonts/simplicity.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Editor Space Quest";
+  src: url("/fonts/space-quest.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Editor Stormfaze";
+  src: url("/fonts/stormfaze.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Editor Torchzilla";
+  src: url("/fonts/torchzilla-regular.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Editor Ubuntu";
+  src: url("/fonts/ubuntu.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Editor Ultraquick";
+  src: url("/fonts/ultraquick.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Editor Visage";
+  src: url("/fonts/visage.otf") format("opentype");
+  font-display: swap;
+}
+
+.checkerboard {
+  background-color: #d4d4d4;
+  background-image:
+    linear-gradient(45deg, #c4c4c4 25%, transparent 25%),
+    linear-gradient(-45deg, #c4c4c4 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #c4c4c4 75%),
+    linear-gradient(-45deg, transparent 75%, #c4c4c4 75%);
+  background-size: 16px 16px;
+  background-position:
+    0 0,
+    0 8px,
+    8px -8px,
+    -8px 0px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .checkerboard {
+    background-color: #262626;
+    background-image:
+      linear-gradient(45deg, #333333 25%, transparent 25%),
+      linear-gradient(-45deg, #333333 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, #333333 75%),
+      linear-gradient(-45deg, transparent 75%, #333333 75%);
+  }
+}
